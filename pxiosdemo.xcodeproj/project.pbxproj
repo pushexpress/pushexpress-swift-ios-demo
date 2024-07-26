@@ -13,7 +13,33 @@
 		E0033CB32C53B3A500DEBB4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0033CB22C53B3A500DEBB4E /* Preview Assets.xcassets */; };
 		E0033CBD2C53B54700DEBB4E /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = E0033CBC2C53B54700DEBB4E /* SdkPushExpress */; };
 		E0033CBF2C53B59F00DEBB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CBE2C53B59F00DEBB4E /* AppDelegate.swift */; };
+		E0033CC72C53BBAD00DEBB4E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CC62C53BBAD00DEBB4E /* NotificationService.swift */; };
+		E0033CCB2C53BBAD00DEBB4E /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E0033CC42C53BBAD00DEBB4E /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0033CC92C53BBAD00DEBB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0033CA02C53B3A300DEBB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0033CC32C53BBAD00DEBB4E;
+			remoteInfo = notificationsvc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0033CCF2C53BBAD00DEBB4E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0033CCB2C53BBAD00DEBB4E /* notificationsvc.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E0033CA82C53B3A300DEBB4E /* pxiosdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pxiosdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +50,9 @@
 		E0033CB92C53B4A200DEBB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E0033CBA2C53B4A900DEBB4E /* pxiosdemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pxiosdemo.entitlements; sourceTree = "<group>"; };
 		E0033CBE2C53B59F00DEBB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0033CC42C53BBAD00DEBB4E /* notificationsvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationsvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0033CC62C53BBAD00DEBB4E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E0033CC82C53BBAD00DEBB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0033CC12C53BBAD00DEBB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				E0033CAA2C53B3A300DEBB4E /* pxiosdemo */,
+				E0033CC52C53BBAD00DEBB4E /* notificationsvc */,
 				E0033CA92C53B3A300DEBB4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E0033CA82C53B3A300DEBB4E /* pxiosdemo.app */,
+				E0033CC42C53BBAD00DEBB4E /* notificationsvc.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +114,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E0033CC52C53BBAD00DEBB4E /* notificationsvc */ = {
+			isa = PBXGroup;
+			children = (
+				E0033CC62C53BBAD00DEBB4E /* NotificationService.swift */,
+				E0033CC82C53BBAD00DEBB4E /* Info.plist */,
+			);
+			path = notificationsvc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,10 +133,12 @@
 				E0033CA42C53B3A300DEBB4E /* Sources */,
 				E0033CA52C53B3A300DEBB4E /* Frameworks */,
 				E0033CA62C53B3A300DEBB4E /* Resources */,
+				E0033CCF2C53BBAD00DEBB4E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E0033CCA2C53BBAD00DEBB4E /* PBXTargetDependency */,
 			);
 			name = pxiosdemo;
 			packageProductDependencies = (
@@ -98,6 +147,23 @@
 			productName = pxiosdemo;
 			productReference = E0033CA82C53B3A300DEBB4E /* pxiosdemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E0033CC32C53BBAD00DEBB4E /* notificationsvc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0033CCC2C53BBAD00DEBB4E /* Build configuration list for PBXNativeTarget "notificationsvc" */;
+			buildPhases = (
+				E0033CC02C53BBAD00DEBB4E /* Sources */,
+				E0033CC12C53BBAD00DEBB4E /* Frameworks */,
+				E0033CC22C53BBAD00DEBB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = notificationsvc;
+			productName = notificationsvc;
+			productReference = E0033CC42C53BBAD00DEBB4E /* notificationsvc.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +176,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					E0033CA72C53B3A300DEBB4E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E0033CC32C53BBAD00DEBB4E = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -131,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				E0033CA72C53B3A300DEBB4E /* pxiosdemo */,
+				E0033CC32C53BBAD00DEBB4E /* notificationsvc */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +212,13 @@
 			files = (
 				E0033CB32C53B3A500DEBB4E /* Preview Assets.xcassets in Resources */,
 				E0033CB02C53B3A500DEBB4E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0033CC22C53BBAD00DEBB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +235,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0033CC02C53BBAD00DEBB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0033CC72C53BBAD00DEBB4E /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0033CCA2C53BBAD00DEBB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0033CC32C53BBAD00DEBB4E /* notificationsvc */;
+			targetProxy = E0033CC92C53BBAD00DEBB4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E0033CB42C53B3A500DEBB4E /* Debug */ = {
@@ -283,6 +376,7 @@
 		E0033CB72C53B3A500DEBB4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = pxiosdemo/pxiosdemo.entitlements;
@@ -314,6 +408,7 @@
 		E0033CB82C53B3A500DEBB4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = pxiosdemo/pxiosdemo.entitlements;
@@ -342,6 +437,56 @@
 			};
 			name = Release;
 		};
+		E0033CCD2C53BBAD00DEBB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9KXCQ4L72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushexpress.pxiosdemo.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0033CCE2C53BBAD00DEBB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9KXCQ4L72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushexpress.pxiosdemo.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +504,15 @@
 			buildConfigurations = (
 				E0033CB72C53B3A500DEBB4E /* Debug */,
 				E0033CB82C53B3A500DEBB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0033CCC2C53BBAD00DEBB4E /* Build configuration list for PBXNativeTarget "notificationsvc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0033CCD2C53BBAD00DEBB4E /* Debug */,
+				E0033CCE2C53BBAD00DEBB4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
