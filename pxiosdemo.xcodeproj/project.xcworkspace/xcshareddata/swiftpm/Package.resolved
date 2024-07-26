@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pushexpress/pushexpress-swift-sdk",
       "state" : {
-        "revision" : "fca7d1449f4512af6abc07a504838c44ebb32561",
-        "version" : "1.0.0"
+        "revision" : "adc3ffa122bae3a2ff6c129f9bc6e4664c63f3d1",
+        "version" : "1.0.1"
       }
     }
   ],
