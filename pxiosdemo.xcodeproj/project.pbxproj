@@ -15,6 +15,7 @@
 		E0033CBF2C53B59F00DEBB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CBE2C53B59F00DEBB4E /* AppDelegate.swift */; };
 		E0033CC72C53BBAD00DEBB4E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CC62C53BBAD00DEBB4E /* NotificationService.swift */; };
 		E0033CCB2C53BBAD00DEBB4E /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E0033CC42C53BBAD00DEBB4E /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E0033CD42C53BCEE00DEBB4E /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = E0033CD32C53BCEE00DEBB4E /* SdkPushExpress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0033CD42C53BCEE00DEBB4E /* SdkPushExpress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,7 @@
 				E0033CAA2C53B3A300DEBB4E /* pxiosdemo */,
 				E0033CC52C53BBAD00DEBB4E /* notificationsvc */,
 				E0033CA92C53B3A300DEBB4E /* Products */,
+				E0033CD02C53BC7400DEBB4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +126,13 @@
 			path = notificationsvc;
 			sourceTree = "<group>";
 		};
+		E0033CD02C53BC7400DEBB4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +171,9 @@
 			dependencies = (
 			);
 			name = notificationsvc;
+			packageProductDependencies = (
+				E0033CD32C53BCEE00DEBB4E /* SdkPushExpress */,
+			);
 			productName = notificationsvc;
 			productReference = E0033CC42C53BBAD00DEBB4E /* notificationsvc.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -532,6 +545,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		E0033CBC2C53B54700DEBB4E /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0033CBB2C53B54700DEBB4E /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+		E0033CD32C53BCEE00DEBB4E /* SdkPushExpress */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0033CBB2C53B54700DEBB4E /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
 			productName = SdkPushExpress;
