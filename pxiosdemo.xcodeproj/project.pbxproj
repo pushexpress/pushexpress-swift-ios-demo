@@ -11,6 +11,7 @@
 		E0033CAE2C53B3A300DEBB4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CAD2C53B3A300DEBB4E /* ContentView.swift */; };
 		E0033CB02C53B3A500DEBB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0033CAF2C53B3A500DEBB4E /* Assets.xcassets */; };
 		E0033CB32C53B3A500DEBB4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0033CB22C53B3A500DEBB4E /* Preview Assets.xcassets */; };
+		E0033CBD2C53B54700DEBB4E /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = E0033CBC2C53B54700DEBB4E /* SdkPushExpress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0033CBD2C53B54700DEBB4E /* SdkPushExpress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,9 @@
 			dependencies = (
 			);
 			name = pxiosdemo;
+			packageProductDependencies = (
+				E0033CBC2C53B54700DEBB4E /* SdkPushExpress */,
+			);
 			productName = pxiosdemo;
 			productReference = E0033CA82C53B3A300DEBB4E /* pxiosdemo.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +120,9 @@
 				Base,
 			);
 			mainGroup = E0033C9F2C53B3A300DEBB4E;
+			packageReferences = (
+				E0033CBB2C53B54700DEBB4E /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */,
+			);
 			productRefGroup = E0033CA92C53B3A300DEBB4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0033CBB2C53B54700DEBB4E /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pushexpress/pushexpress-swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0033CBC2C53B54700DEBB4E /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0033CBB2C53B54700DEBB4E /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0033CA02C53B3A300DEBB4E /* Project object */;
 }
