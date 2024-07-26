@@ -19,6 +19,8 @@
 		E0033CAD2C53B3A300DEBB4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0033CAF2C53B3A500DEBB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0033CB22C53B3A500DEBB4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0033CB92C53B4A200DEBB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E0033CBA2C53B4A900DEBB4E /* pxiosdemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pxiosdemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 		E0033CAA2C53B3A300DEBB4E /* pxiosdemo */ = {
 			isa = PBXGroup;
 			children = (
+				E0033CBA2C53B4A900DEBB4E /* pxiosdemo.entitlements */,
+				E0033CB92C53B4A200DEBB4E /* Info.plist */,
 				E0033CAB2C53B3A300DEBB4E /* pxiosdemoApp.swift */,
 				E0033CAD2C53B3A300DEBB4E /* ContentView.swift */,
 				E0033CAF2C53B3A500DEBB4E /* Assets.xcassets */,
@@ -269,12 +273,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pxiosdemo/pxiosdemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pxiosdemo/Preview Content\"";
 				DEVELOPMENT_TEAM = Q9KXCQ4L72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pxiosdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +304,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pxiosdemo/pxiosdemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pxiosdemo/Preview Content\"";
 				DEVELOPMENT_TEAM = Q9KXCQ4L72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pxiosdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
