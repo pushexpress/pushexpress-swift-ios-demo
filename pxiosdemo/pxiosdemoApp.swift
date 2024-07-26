@@ -2,7 +2,6 @@
 //  pxiosdemoApp.swift
 //  pxiosdemo
 //
-//  Created by I P on 26/07/2024.
 //
 
 import SwiftUI

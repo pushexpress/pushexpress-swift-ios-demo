@@ -12,6 +12,7 @@
 		E0033CB02C53B3A500DEBB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0033CAF2C53B3A500DEBB4E /* Assets.xcassets */; };
 		E0033CB32C53B3A500DEBB4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0033CB22C53B3A500DEBB4E /* Preview Assets.xcassets */; };
 		E0033CBD2C53B54700DEBB4E /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = E0033CBC2C53B54700DEBB4E /* SdkPushExpress */; };
+		E0033CBF2C53B59F00DEBB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CBE2C53B59F00DEBB4E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E0033CB22C53B3A500DEBB4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0033CB92C53B4A200DEBB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E0033CBA2C53B4A900DEBB4E /* pxiosdemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pxiosdemo.entitlements; sourceTree = "<group>"; };
+		E0033CBE2C53B59F00DEBB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				E0033CBA2C53B4A900DEBB4E /* pxiosdemo.entitlements */,
 				E0033CB92C53B4A200DEBB4E /* Info.plist */,
 				E0033CAB2C53B3A300DEBB4E /* pxiosdemoApp.swift */,
+				E0033CBE2C53B59F00DEBB4E /* AppDelegate.swift */,
 				E0033CAD2C53B3A300DEBB4E /* ContentView.swift */,
 				E0033CAF2C53B3A500DEBB4E /* Assets.xcassets */,
 				E0033CB12C53B3A500DEBB4E /* Preview Content */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0033CBF2C53B59F00DEBB4E /* AppDelegate.swift in Sources */,
 				E0033CAE2C53B3A300DEBB4E /* ContentView.swift in Sources */,
 				E0033CAC2C53B3A300DEBB4E /* pxiosdemoApp.swift in Sources */,
 			);
