@@ -15,7 +15,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Initialize SDK with PushExpress Application ID
-        try! PushExpressManager.shared.initialize(appId: PUSHEXPRESS_APP_ID)
+        
+        // For minimal initialization (without requesting notification perms
+        // and registering for remote notifications) set 'essentialsOnly: true'
+        try! PushExpressManager.shared.initialize(appId: PUSHEXPRESS_APP_ID, essentialsOnly: true)
+        
+        // To call only notification perms request, set 'registerForRemoteNotifications: false'
+        // Do not call this if you will request permissions by yourself
+        PushExpressManager.shared.requestNotificationsPermission(registerForRemoteNotifications: true)
         
         // DO NOT SET UNLESS YOU ARE 100% SURE WHAT THAT IS!!!
         /*

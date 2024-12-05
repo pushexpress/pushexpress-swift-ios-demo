@@ -11,11 +11,11 @@
 		E0033CAE2C53B3A300DEBB4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CAD2C53B3A300DEBB4E /* ContentView.swift */; };
 		E0033CB02C53B3A500DEBB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0033CAF2C53B3A500DEBB4E /* Assets.xcassets */; };
 		E0033CB32C53B3A500DEBB4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0033CB22C53B3A500DEBB4E /* Preview Assets.xcassets */; };
-		E0033CBD2C53B54700DEBB4E /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = E0033CBC2C53B54700DEBB4E /* SdkPushExpress */; };
 		E0033CBF2C53B59F00DEBB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CBE2C53B59F00DEBB4E /* AppDelegate.swift */; };
 		E0033CC72C53BBAD00DEBB4E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0033CC62C53BBAD00DEBB4E /* NotificationService.swift */; };
 		E0033CCB2C53BBAD00DEBB4E /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E0033CC42C53BBAD00DEBB4E /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E0033CD42C53BCEE00DEBB4E /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = E0033CD32C53BCEE00DEBB4E /* SdkPushExpress */; };
+		E0BF6DED2D01AC230053B553 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = E0BF6DEC2D01AC230053B553 /* SdkPushExpress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0033CBD2C53B54700DEBB4E /* SdkPushExpress in Frameworks */,
+				E0BF6DED2D01AC230053B553 /* SdkPushExpress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			);
 			name = pxiosdemo;
 			packageProductDependencies = (
-				E0033CBC2C53B54700DEBB4E /* SdkPushExpress */,
+				E0BF6DEC2D01AC230053B553 /* SdkPushExpress */,
 			);
 			productName = pxiosdemo;
 			productReference = E0033CA82C53B3A300DEBB4E /* pxiosdemo.app */;
@@ -552,12 +552,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E0033CBC2C53B54700DEBB4E /* SdkPushExpress */ = {
+		E0033CD32C53BCEE00DEBB4E /* SdkPushExpress */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0033CBB2C53B54700DEBB4E /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
 			productName = SdkPushExpress;
 		};
-		E0033CD32C53BCEE00DEBB4E /* SdkPushExpress */ = {
+		E0BF6DEC2D01AC230053B553 /* SdkPushExpress */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0033CBB2C53B54700DEBB4E /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
 			productName = SdkPushExpress;
